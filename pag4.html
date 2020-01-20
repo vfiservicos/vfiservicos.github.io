@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="content-language" content="pt-br"/>
+<title>VFI :: Horários</title>
+	<meta name="og:title" content="Site oficial da empresa VFI"/>
+	<meta name="author" content="Juan Kevin dos Santos"/>
+	<meta name="description" content="Este é o nosso site oficial, por aqui você encontra informações sobre nosso funcionamento, filosofia de trabalho, entre outras informações que pode ser úteis para você."/>
+	<meta name="og:description" content="Este é o nosso site oficial, por aqui você encontra informações sobre nosso funcionamento, filosofia de trabalho, entre outras informações que pode ser úteis para você."/>
+	<meta name="keywords" content="trabalho, empreendedorismo, curso, sestsenat, ja-111"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex/nofollow"/>
+	<link rel="stylesheet" href="master.css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+	<div class="cabecalho">
+		<h1 class="textologo">VFI - Veículo Férreo Inteligente</h1>
+		<img class="logotipo" src="transporte.png">
+	</div>
+	<div class="menu">
+		<a href="index.html">Início</a>
+		<a href="pag1.html">Sobre nós</a>
+		<a href="pag2.html">Serviço & Acessibilidade</a>
+		<a href="pag3.html">Localização</a>
+		<p class="here">Horários</p>
+	</div>
+	<div class="conteudo">
+		<h1>Horários de Chegada e Saída das Estações</h1>
+		<p>
+			O horário varia de acordo com as situação climáticas ou de problemas técnicos nos veículos
+		</p>
+		<p>
+			Esta é a tabela de horários para <span id="dataatual"></span>
+		</p>
+		<script>
+			var data = new Date();
+			var ano = data.getFullYear();
+			var mes = data.getMonth();
+			var dia = data.getDate();
+			var str = 'o dia '+dia+' do '+(mes+1)+' de '+ano;
+			document.getElementById("dataatual").innerHTML = str;
+		</script>
+		<table>
+			<tr>
+				<th>Estações</th>
+				<th colspan="2">Chegada/Saída</th>
+			</tr>
+			<tr>
+				<th>RS x SC</th>
+				<td>~ 00:30</td>
+				<td>~ 00:06</td>
+			</tr>
+			<tr>
+				<th>SC x PR</th>
+				<td>~ 00:20</td>
+				<td>~ 00:07</td>
+			</tr>
+			<tr>
+				<th>PR x SP</th>
+				<td>~ 00:30</td>
+				<td>~ 00:10</td>
+			</tr>
+			<tr>
+				<th>SP x RJ</th>
+				<td>~ 00:30</td>
+				<td>~ 00:15</td>
+			</tr>
+			<tr>
+				<th>RJ x MG</th>
+				<td>~ 00:40</td>
+				<td>~ 00:12</td>
+			</tr>
+			<tr>
+				<th>MG x ES</th>
+				<td>~ 00:30</td>
+				<td>~ 00:05</td>
+			</tr>
+			<tr>
+				<th>ES x SE</th>
+				<td>~ 01:49</td>
+				<td>~ 00:05</td>
+			</tr>
+			<tr>
+				<th>SE X PE</th>
+				<td>~ 00:45</td>
+				<td>~ 00:08</td>
+			</tr>
+			<tr>
+				<th>PE x PB</th>
+				<td>~ 00:15</td>
+				<td>~ 00:06</td>
+			</tr>
+			<tr>
+				<th>PB x CE</th>
+				<td>~ 01:02</td>
+				<td>~ 00:25</td>
+			</tr>
+		</table>
+		<h1>Por aqui você também fica sabendo de eventuais problemas</h1>
+		<h2>Até agora 00000 problemas</h2>
+	</div>
+	<div class="rodape">
+		<p style="display: inline-block;">
+		Nosso número:<br/>
+		0800-4458<br/>
+		0800-1768<br/>
+		</p>
+		<p style="display: inline-block; margin-left: 0.6em;">
+		Nosso whatsapp:<br/>
+		(21) 9876-4455<br/>
+		<br/>
+		</p>
+		<p style="display: inline-block; margin-left: 35%;">
+		Avenida Bento Ribeiro Dantas 105, Maré - Rio de Janeiro
+		</p>
+		<a href="#">t</a>
+		<a href="https://www.instagram.com">ë</a>
+		<a href="https://ww.skype.com.br">ï</a>
+		<a href="mailto:vfiservicos@vfi.com">8</a>
+	</div>
+</body>
+</html>
